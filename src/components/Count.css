@@ -1,0 +1,20 @@
+.CountRender {
+    border: 5px solid blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: yellow;
+}
+.Count {
+    height: 50px;
+    width:50px;
+    font-size: 90px;
+}
+
+.Btn {
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    background-color: chocolate;
+    color: cornsilk;
+}
