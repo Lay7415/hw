@@ -1,9 +1,19 @@
+import React, {useState} from 'react';
 import './App.css';
-import Items from './components/Items';
-
+import Comment from './components/Comment';
+import Render from './components/Render';
 function App() {
+  const [list, setList] = useState([]);
+
+  const onAddListHundler = (text) => {
+    setList( prevList => {
+      // console.log(prevList)
+      return [text, ...prevList]
+    })
+  }
   return <div className="App">
-    <Items/>
+    <Comment onAddList={onAddListHundler}/>
+    <Render list={list}/>
   </div>
 }
 
